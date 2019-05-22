@@ -149,9 +149,12 @@ body {
 }
 
 /*Tilpasser bunden i hver sektion*/
-#garagebund {
+.garagebund {
     margin: -14px auto 0px auto;
     padding: 10px 10px 36px 10px;
+    background-color: #E9EEFF;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 7px 1px #3A4A7D;
 }
 
 /*Tilpasser 'tilføj bil' knap*/
