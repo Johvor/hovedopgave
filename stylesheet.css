@@ -1,0 +1,281 @@
+/* Dette er udviklet af multimediedesignstuderende Johanne Vorre fra arhvervsakademi Dania i Skive. Koden er fremstillet i forbindelse med afsluttende hovedopgave sommeren 2019 */
+
+/*al tekst fremvises med fonten Roboto*/
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Gælder navigationsbaren. Der ændres baggrunds- og tekstfarve, tilføjes en ramme og højden på nav-baren og linjerne justeres.*/
+.nav {
+    background-color: #253a7a;
+    border-bottom: 1px solid #1C3664;
+    height: 70px;
+    line-height: 70px;
+}
+
+/*Justerer farve, størrelse og margin på hamburgerikonet*/
+label {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+/*justerer branc logo i midten af nav-bar*/
+#dplogo {
+    width: 100px;
+    padding-left: 140px;
+}
+
+/*Justerer ikonet og rykker det mod højre*/
+#meddelelse {
+    width: 25px;
+    padding-left: 90px;
+}
+
+/*Justerer ikonet og rykker det mod højre*/
+#notifikation {
+    width: 27px;
+    padding-left: 10px;
+}
+
+/*Tilføjer en graduerende baggrund*/
+body {
+    background-image: linear-gradient(#46578E, #7784AC) !important;
+    padding-bottom: 100px;
+}
+
+
+/*justerer den overordnede form på alle sektionerne i dokumentet*/
+.indholdsform {
+    margin: 30px 30px 30px 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 7px 7px #3A4A7D;
+
+}
+
+/*Justerer DPF logo. Den tilføjer baggrundsfarve, runder de to øverste hjørner og tilføjer en drop shadow nederst.*/
+#klublogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 10px 62px 10px 60px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #E9EEFF;
+    box-shadow: 0px 0px 10px 0px #3A4A7D;
+}
+
+/*Former en cirkel rundt om "Niveau 1"*/
+#niv1 {
+    line-height: 1px;
+    border: 2px solid #253a7a;
+    border-radius: 100%;
+    margin: 20px 260px 0px 70px;
+    padding: 5px 0px 0px 13px;
+}
+
+/*Tilpasser 1-tallet i vægt og størrelse*/
+#storttal {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0px 0px 0px 14px;
+}
+
+/*Ændrer teksten til højre for niveauindikatoren*/
+#medlemtekst {
+    margin-left: 190px;
+    margin-top: -80px;
+    line-height: 1px;
+}
+
+/* Gør tekst fed*/
+.fedtekst {
+    font-weight: 600;
+}
+
+/*SKubber linjerne under den fede tekst lidt mod højre*/
+.tyndtekst {
+    margin: 0px 0px 15px 20px;
+}
+
+/*Fastslår farve, skriftfarve, padding m.m. for alle knapper*/
+.knap {
+    color: #ffffff;
+    background-color: #F6B629;
+    border-radius: 50px;
+    padding: 7px 22px 7px 22px;
+    margin-left: 125px;
+}
+
+/*øger afstanden mellem indholdet i boksen og "se medlemsfordele"-knappen*/
+#sefordele {
+    margin-top: 20px;
+}
+
+/*Dette er den overordnede style for bunden i de forskellige sektioner. Den angiver farve, afrunding af hjørner og dropshadow*/
+.bundstyle {
+    background-color: #E9EEFF;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 7px 1px #3A4A7D;
+}
+
+/* Tilpasser bundsektionen til DP Family i bredde, højde m.m.*/
+#fambund {
+    margin: -14px auto 0px auto;
+    padding: 10px 10px 36px 10px;
+}
+
+/*sætter luft rundt om formen*/
+#mingarage {
+    margin: 30px 30px 30px 30px;
+}
+
+/*Tilpasser overskriterne. De får en baggrundsfarve, skygge, centreres m.m.*/
+.overskrift {
+    color: #253a7a;
+    font-size: 20px;
+    font-weight: 500px;
+    background-color: #E9EEFF;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 0px 10px 0px #3A4A7D;
+}
+
+/*centrerer tekst*/
+.centertekst {
+    text-align: center;
+}
+
+/*Tilpasser bunden i hver sektion*/
+#garagebund {
+    margin: -14px auto 0px auto;
+    padding: 10px 10px 36px 10px;
+}
+
+/*Tilpasser 'tilføj bil' knap*/
+#tilfojbil {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+/*sætter luft rundt om formen*/
+#kalender {
+    margin: 30px 30px 30px 30px;
+}
+
+/*Tilpasser 'Se begivenheder'*/
+#seevents {
+    margin-left: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*Tilpasser 'Book værksted*/
+#bookmek {
+    margin-left: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#nyheder {
+    margin: 30px 30px 30px 30px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+    box-shadow: 1px 1px 7px 7px #3A4A7D;
+    padding-bottom: 0px;
+}
+
+/* Her starter selve tilpasningen af karrusellen. Billederne sættes i midten */
+.mySlides {
+    display: none
+}
+
+.imgbanner {
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+/*containeren rundt om galleriet tilpasses*/
+.slideshow-container {
+    position: relative;
+    margin-bottom: -9px;
+}
+
+/* Højre & venstre pil tilpasses i størrelse, farve m.m. */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Placerer knappen mod 'næste billede' i højre side */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Tilpasser tilbudsbeskrivelsen ovenpå billederne. Farven ændres, størrelse, placering m.m.*/
+.tilbudslinje {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* De runde indikatorer under billederne tilpasses */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 2px 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/*gør den prik, der er tilsvarende det viste billede, mørkere*/
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/*Tilpasser 'Se begivenheder'*/
+#meddel {
+    margin-left: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*Tilpasser 'Book værksted*/
+#ring {
+    margin-left: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+#tiltop {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+

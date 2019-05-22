@@ -1,0 +1,124 @@
+<!-- Dette er udviklet af multimediedesignstuderende Johanne Vorre fra arhvervsakademi Dania i Skive. Koden er fremstillet i forbindelse med afsluttende hovedopgave sommeren 2019 -->
+
+<!--Fortæller browseren, at det er et HTML-dokument -->
+<!DOCTYPE html>
+<!--Fortæller at sproget er dansk-->
+<html lang="da">
+
+<head>
+    <!-- Angiver "karaktersættet" -->
+    <meta charset="UTF-8">
+
+    <!-- Fortæller titlen til browseren -->
+    <title>Dahl Pedersen Family</title>
+
+    <!-- Linker til fonten Roboto fra Google Fonts. Det ligger over stylesheet, så browseren loader fonten, før den bruges. -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!-- Linker til CSS-dokumentet, der indeholder designoplysninger -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Så enheden ikke skalerer sitet uhensigtsmæssigt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="nav">
+        <!-- Ikon for hamburger-menu -->
+        <label for="toggle">&#9776;</label>
+
+        <!-- Tilføjer billeder til nav.-baren og angiver tekst til skærmlæsere -->
+        <img id="dplogo" src="img/dplogo.png" at="Dahl Pedersen logo">
+        <img id="meddelelse" src="img/besked.png" alt="billede af meddelelsesikon">
+        <img id="notifikation" src="img/notifikation.png" alt="billede af notifikationsikon">
+    </div>
+
+    <!-- Herunder kommer de forskellige sektioner på startsiden. Den første fastslår indholdet i den øverste sektion.-->
+    <!-- klassen 'indholdsform' definerer det overordnede udseende i CSS-->
+    <div class="indholdsform" id="famboks">
+        <!-- Der indsættes et billede af DPF logo-->
+        <img id="klublogo" src="img/klublogo.png" alt="Dahl Pedersen Familys logo">
+        <div id="niv1">
+            <p id="nive">Niveau</p>
+            <p id="storttal">1</p>
+        </div>
+        <div id="medlemtekst">
+            <p class="fedtekst">Du har sparet:</p>
+            <p class="tyndtekst">495,00 kr</p>
+            <p class="fedtekst">Næste bonus:</p>
+            <p class="tyndtekst">1 fri guldvask</p>
+        </div>
+        <button class="knap" id="sefordele">Se medlemsfordele</button>
+        <div class="bundstyle" id="fambund"> </div>
+    </div>
+
+    <!-- Fastslår indholdet i sektion nr. 2 - min garage -->
+    <div class="indholdsform" id="mingarage">
+        <h2 class="overskrift">MIN GARAGE</h2>
+        <p class="centertekst">Tilføj din bil og få dine første point</p>
+        <button class="knap" id="tilfojbil">Tilføj bil</button>
+        <div class="bundstyle" id="garagebund"> </div>
+    </div>
+
+    <!-- Fastslår indholdet i sektion nr. 3 - kalender -->
+    <div class="indholdsform" id="kalender">
+        <h2 class="overskrift">KALENDER</h2>
+        <p class="centertekst">Du har ingen kommende aftaler eller<br>begivenheder i din kalender</p>
+        <button class="knap" id="seevents">Se begivenheder</button>
+        <button class="knap" id="bookmek">Book værksted</button>
+        <div class="bundstyle" id="garagebund"> </div>
+    </div>
+
+    <!-- Følgende sektion definerer karrusellen-->
+    <div class="" id="nyheder">
+        <h2 class="overskrift">NYHEDER</h2>
+        <!-- Her starter selve karrusellen -->
+        <div class="slideshow-container">
+            <!-- Første billede -->
+            <div class="mySlides">
+                <img class="imgbanner" src="img/sprinkler.jpg">
+                <div class="tilbudslinje"> Gratis sprinklervæske til alle medlemmer</div>
+            </div>
+
+            <!-- Andet billede -->
+            <div class="mySlides">
+                <img class="imgbanner" src="img/michelin.jpg">
+                <div class="tilbudslinje"> 15% rabat på nye sommerdæk fra Michelin</div>
+            </div>
+
+            <!-- Tredje billede -->
+            <div class="mySlides">
+                <img class="imgbanner" src="img/bakkamera.jpg">
+                <div class="tilbudslinje"> Lav pris på eftermonteret bakkamera</div>
+            </div>
+            <!-- Knappen mod venstre konstrueres -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <!-- Knappen mod højre konstrueres -->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Fastslår indholdet i sektion nr. 3 - kalender -->
+    <div class="indholdsform" id="kontakt">
+        <h2 class="overskrift">KONTAKT OS</h2>
+        <p class="centertekst">Har du spørgsmål eller brug for hjælp<br>så kontakt os her</p>
+        <button class="knap" id="meddel">Send meddelelse</button>
+        <button class="knap" id="ring">Ring op</button>
+        <div class="bundstyle" id="garagebund"> </div>
+    </div>
+    
+<!-- Sender brugeren til toppen af siden -->
+    <div id="tiltop">
+        <a href="#dplogo">&#x2227;<br></a>
+        <a href="#dplogo">Til toppen</a>
+    </div>
+    <!-- Der linkes til JavaScript-dokumentet -->
+    <script src="karrusel.js"></script>
+</body></html>
