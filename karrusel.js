@@ -6,11 +6,12 @@ var slideIndex = 1;
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
-
+ //laver en funktion, der hedder currentSlide. Den har til formål at vise det seneste slide. Det kan vi se, fordi den vise variablen showSlides
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
-
+//Vi laver en funktion, der som det første indholder tre variabler. Den leder efter det i dokumentet, der har klasserne som 'mySlides' og 'dot'
+//n bruges for ikke at skrive et specifikt tal, så vi kan trykke uendeligt hen i billederne
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
