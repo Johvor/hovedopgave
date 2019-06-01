@@ -1,10 +1,12 @@
+//Dette er udviklet af multimediedesignstuderende Johanne Vorre fra erhvervsakademi Dania i Skive. Koden er fremstillet i forbindelse med afsluttende hovedopgave sommeren 2019
+
 //Først laves en variabel, der sætter slideIndex til at have værdien 1.
 var slideIndex = 1;
 showSlides(slideIndex);
 
 
 
-//Der laves en funktion med navnet plusSlides, der beskriver at plusSlides med en uspecificeret værdi er showSlide med slideIndex+n, altså slideIndex plus et eller andet tal
+//Der laves en funktion med navnet plusSlides, der beskriver at plusSlides med en uspecificeret værdi er showSlides med slideIndex+n, altså slideIndex plus et eller andet tal
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
